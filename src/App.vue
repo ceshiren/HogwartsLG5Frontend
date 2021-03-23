@@ -1,9 +1,15 @@
 <template>
   <v-app>
+      <v-navigation-drawer app clipped>
+    <!-- -->
+    <Nav/>
+  </v-navigation-drawer>
+
     <v-app-bar
       app
       color="primary"
       dark
+      clipped-left
     >
       <div class="d-flex align-center">
         <v-img
@@ -38,19 +44,27 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <Login/>
+      <TestCase/>
+      <!-- <HelloWorld/> -->
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import Login from './components/Login.vue';
+// import HelloWorld from './components/HelloWorld';
+import Nav from './components/Nav.vue';
+import TestCase from './components/TestCase.vue';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    // HelloWorld,
+    Nav,
+    TestCase,
+    Login,
   },
 
   data: () => ({
