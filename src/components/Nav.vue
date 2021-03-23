@@ -63,7 +63,7 @@
         { text: '测试结果', icon: 'mdi-history' , to: "/1" },
         { text: '测试报告', icon: 'mdi-check-circle' , to: "/1" },
         { text: '配置', icon: 'mdi-upload' , to: "/login" },
-        { text: '个人资料', icon: 'mdi-cloud-upload', to: "/2" },
+        { text: '个人资料', icon: 'mdi-cloud-upload', to: "/form" },
       ],
     }),
   }

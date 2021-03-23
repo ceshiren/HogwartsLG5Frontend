@@ -53,10 +53,10 @@
 </template>
 
 <script>
-import Login from './components/Login.vue';
+// import Login from './components/Login.vue';
 // import HelloWorld from './components/HelloWorld';
 import Nav from './components/Nav.vue';
-import TestCase from './components/TestCase.vue';
+// import TestCase from './components/TestCase.vue';
 
 export default {
   name: 'App',
@@ -64,8 +64,8 @@ export default {
   components: {
     // HelloWorld,
     Nav,
-    TestCase,
-    Login,
+    // TestCase,
+    // Login,
   },
 
   data: () => ({

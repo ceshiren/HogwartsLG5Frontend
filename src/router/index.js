@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import TestCase from '../components/TestCase.vue'
 import Login from '../components/Login.vue'
+import Form from '../components/Form.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: Login
+  },
+  {
+    path: '/form',
+    name: 'Form',
+    component: Form
   },
   {
     path: '/about',
