@@ -44,9 +44,10 @@
     </v-app-bar>
 
     <v-main>
-      <Login/>
+      <!-- <Login/>
       <TestCase/>
-      <!-- <HelloWorld/> -->
+      <HelloWorld/> -->
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>

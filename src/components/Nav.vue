@@ -33,7 +33,9 @@
           <v-list-item
             v-for="(item, i) in items"
             :key="i"
+            :to="item.to"
           >
+        
             <v-list-item-icon>
               <v-icon v-text="item.icon"></v-icon>
             </v-list-item-icon>
@@ -41,7 +43,9 @@
             <v-list-item-content>
               <v-list-item-title v-text="item.text"></v-list-item-title>
             </v-list-item-content>
+
           </v-list-item>
+          
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
@@ -53,13 +57,13 @@
     data: () => ({
       selectedItem: 0,
       items: [
-        { text: '项目详情', icon: 'mdi-folder' },
-        { text: '测试用例', icon: 'mdi-account-multiple' },
-        { text: '测试套件', icon: 'mdi-star' },
-        { text: '测试结果', icon: 'mdi-history' },
-        { text: '测试报告', icon: 'mdi-check-circle' },
-        { text: '配置', icon: 'mdi-upload' },
-        { text: '个人资料', icon: 'mdi-cloud-upload' },
+        { text: '项目详情', icon: 'mdi-folder', to: "/1"  },
+        { text: '测试用例', icon: 'mdi-account-multiple', to: "/testcase" },
+        { text: '测试套件', icon: 'mdi-star' , to: "/1" },
+        { text: '测试结果', icon: 'mdi-history' , to: "/1" },
+        { text: '测试报告', icon: 'mdi-check-circle' , to: "/1" },
+        { text: '配置', icon: 'mdi-upload' , to: "/login" },
+        { text: '个人资料', icon: 'mdi-cloud-upload', to: "/2" },
       ],
     }),
   }
