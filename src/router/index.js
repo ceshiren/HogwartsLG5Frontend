@@ -4,6 +4,8 @@ import Home from '../views/Home.vue'
 import TestCase from '../components/TestCase.vue'
 import Login from '../components/Login.vue'
 import Form from '../components/Form.vue'
+import Suite from '../components/Suite'
+import Report from '../components/Report'
 
 Vue.use(VueRouter)
 
@@ -18,6 +20,8 @@ const routes = [
     name: 'TestCase',
     component: TestCase
   },
+  { path: '/suite', component: Suite},
+  { path: '/report', component: Report},
   {
     path: '/login',
     name: 'Login',
